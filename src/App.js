@@ -1,15 +1,10 @@
 import React, { Component } from "react";
 import MyComponent from "./MyComponent";
 import "./App.css";
+import Counter from "./Counter";
 
-class App extends Component {
-  render() {
-    return (
-      <MyComponent name="React" requiredNumber={1}>
-        children
-      </MyComponent>
-    );
-  }
-}
+const App = () => {
+  return <Counter />;
+};
 
 export default App;
