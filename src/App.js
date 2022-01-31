@@ -1,15 +1,9 @@
 import React, { Component } from "react";
-import MyComponent from "./MyComponent";
 import "./App.css";
+import Say from "./Say";
 
-class App extends Component {
-  render() {
-    return (
-      <MyComponent name="React" requiredNumber={1}>
-        children
-      </MyComponent>
-    );
-  }
-}
+const App = () => {
+  return <Say />;
+};
 
 export default App;
