@@ -1,13 +1,15 @@
 import './App.css';
 
 function App() {
+  const name = '빵';
+  const breadList = ['우유', '딸기', '바나나', '초코'];
   return (
     <>
-      <h1 className='orange'>Hello!</h1>
+      <h1 className='orange'>{`가장 맛있는 탄수화물! ${name}`}</h1>
       <ul>
-        <li>우유</li>
-        <li>딸기</li>
-        <li>바나나</li>
+        {breadList.map((item) => (
+          <li>{item}</li>
+        ))}
       </ul>
       <img 
         style={{width: '200px', height: '200px'}}
