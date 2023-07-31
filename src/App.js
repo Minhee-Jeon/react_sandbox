@@ -1,33 +1,20 @@
-import React, { Component } from "react";
-import "./App.css";
-import LifeCycleSample from "./LifeCycleSample";
-import ErrorBoundary from "./ErrorBoundary";
+import './App.css';
 
-// 랜덤 색상을 생성합니다.
-function getRendomColor() {
-  return "#" + Math.floor(Math.random() * 16777215).toString(16);
-}
-
-class App extends Component {
-  state = {
-    color: "#000000",
-  };
-
-  handleClick = () => {
-    this.setState({
-      color: getRendomColor(),
-    });
-  };
-  render() {
-    return (
-      <div>
-        <button onClick={this.handleClick}>랜덤 색상</button>
-        <ErrorBoundary>
-          <LifeCycleSample color={this.state.color} />
-        </ErrorBoundary>
-      </div>
-    );
-  }
+function App() {
+  return (
+    <>
+      <h1 className='orange'>Hello!</h1>
+      <ul>
+        <li>우유</li>
+        <li>딸기</li>
+        <li>바나나</li>
+      </ul>
+      <img 
+        style={{width: '200px', height: '200px'}}
+        src='https://plus.unsplash.com/premium_photo-1664640733898-d5c3f71f44e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80'
+        alt='bread'/>
+    </>
+  );
 }
 
 export default App;
