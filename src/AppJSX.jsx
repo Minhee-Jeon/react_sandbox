@@ -1,6 +1,6 @@
 import './App.css';
 
-function App() {
+function AppJSX() {
   const name = '빵';
   const breadList = ['우유', '딸기', '바나나', '초코'];
   return (
@@ -19,4 +19,4 @@ function App() {
   );
 }
 
-export default App;
+export default AppJSX;
